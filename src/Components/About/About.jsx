@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
-import Abhishekimg from '../../assets/Abhishekimg.jpg'; // Adjust path
+import Abhishekimg from '/Abhishekimg.jpg'; // Adjust path
 
 function About() {
   const fadeInSection = useSpring({
@@ -38,10 +38,11 @@ function About() {
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-24">
           <animated.div style={slideInImage} className="flex justify-center w-full md:w-1/2">
             <img
-              src={Abhishekimg}
+              src="/Abhishekimg.jpg"
               alt="Profile"
               className="w-72 h-72 object-cover rounded-full shadow-lg border-4 border-blue-500 transition-transform duration-500 transform hover:scale-110"
             />
+
           </animated.div>
 
           <animated.div style={fadeInText} className="flex flex-col w-full md:w-1/2 space-y-6">

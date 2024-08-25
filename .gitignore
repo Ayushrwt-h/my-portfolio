@@ -1,0 +1,17 @@
+# node_modules folder is ignored because it can be huge and is not necessary to track in Git
+node_modules/
+
+# build folder is ignored because it contains compiled code that is not necessary to track in Git
+build/
+
+# coverage folder is ignored because it contains test coverage reports that are not necessary to track in Git
+coverage/
+
+# .env file is ignored because it contains environment variables that should not be tracked in Git
+.env
+
+# README.md file is ignored because it is a markdown file that can be generated from the package.json file
+README.md
+
+# package-lock.json file is ignored because it contains information about the specific versions of packages that are installed in the project. This information is not necessary to track in Git because it can be generated from the package.json file.
+package-lock.json

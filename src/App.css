@@ -1,0 +1,42 @@
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+body , .about{
+  background: linear-gradient(to right, #182657, #4842D2);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 ,h2 {
+  color: rgb(252, 250, 250);
+}
+p{
+  color: rgba(252, 250, 250, 0.406);
+  font-size: large;
+
+}
+.window{
+ background-color: red;
+ text-align: right;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+  );
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

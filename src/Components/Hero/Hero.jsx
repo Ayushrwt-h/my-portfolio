@@ -40,7 +40,7 @@ function Hero() {
       </div>
 
       {/* Text Section */}
-      <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-2xl mt-8 animate-fade-in-up">
+      <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-2xl mt-2 animate-fade-in-up mb-0 mb-0">
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter font-serif text-yellow-400 leading-tight shadow-lg drop-shadow-xl neon-glow">
           Hi, I'm Abhishek Rawat
         </h1>
@@ -63,7 +63,7 @@ function Hero() {
       </div>
 
       {/* Animation Section */}
-      <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg mt-8 lg:mt-12 pb-4 animate-fade-in-up hover:scale-105 transform transition-transform duration-500 ease-in-out">
+      <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-lg mt-8 lg:mt-12 pb-2 animate-fade-in-up hover:scale-105 transform transition-transform duration-500 ease-in-out">
         <Lottie animationData={DigitalMarketingAnimation} className="w-full h-full" />
       </div>
     </section>

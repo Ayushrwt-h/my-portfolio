@@ -5,63 +5,70 @@ import DigitalMarketingAnimation from "../../assets/DigitalMarketingAnimation.js
 
 function Hero() {
   const [typeEffect] = useTypewriter({
-    words: ["I am Abhishek Rawat", "I am a digital entrepreneur"],
+    words: ["I'm Abhishek Rawat", "I'm a Digital Entrepreneur"],
     loop: true,
     typeSpeed: 100,
-    deleteSpeed: 40,
+    deleteSpeed: 50,
   });
 
   return (
-    <main className="relative min-h-[70vh] w-full flex flex-col md:flex-row items-center bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-8 overflow-hidden">
-      {/* Background Circles */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl from-gray-900 via-purple-800 to-indigo-900 px-6 py-8 text-white overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 z-0 opacity-20">
         <svg
-          className="absolute -top-32 -left-32 opacity-30 text-white"
-          width="300"
-          height="300"
-          viewBox="0 0 300 300"
+          className="w-full h-full"
+          viewBox="0 0 800 800"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="150" cy="150" r="150" stroke="currentColor" strokeWidth="2" />
-        </svg>
-        <svg
-          className="absolute bottom-0 right-0 opacity-30 text-white"
-          width="400"
-          height="400"
-          viewBox="0 0 400 400"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="200" cy="200" r="200" stroke="currentColor" strokeWidth="2" />
+          <circle cx="400" cy="400" r="400" fill="url(#paint0_radial)" />
+          <defs>
+            <radialGradient
+              id="paint0_radial"
+              cx="0"
+              cy="0"
+              r="1"
+              gradientUnits="userSpaceOnUse"
+              gradientTransform="rotate(90 0 400) scale(400)"
+            >
+              <stop stopColor="#6366F1" />
+              <stop offset="1" stopColor="#9333EA" stopOpacity="0" />
+            </radialGradient>
+          </defs>
         </svg>
       </div>
 
       {/* Text Section */}
-      <div className="relative flex flex-col gap-4 justify-center text-center md:text-left md:w-1/2 z-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight shadow-md">
-          Hi There!
+      <div className="relative z-10 flex flex-col items-center text-center space-y-4 max-w-xl mt-4">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-wide">
+          Hi, I'm <span className="text-yellow-300">Abhishek Rawat</span>
         </h1>
-        <h2 className="text-2xl md:text-4xl font-bold text-white leading-tight shadow-md">
-          {typeEffect}
-          <span className="animate-ping">|</span>
+
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight">
+          {typeEffect} <span className="animate-blink">|</span>
         </h2>
-        <p className="text-base md:text-lg text-white leading-relaxed mt-4">
-          Hi there! I'm a passionate digital marketing expert with a <br />
-          mission to share my knowledge with the world.
+
+        <p className="text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg">
+          I specialize in digital marketing and crafting user-friendly online
+          experiences that help businesses thrive in the digital world.
         </p>
+
+        <a
+          href="#contact"
+          className="inline-block px-6 py-3 mt-4 bg-yellow-500 text-gray-900 font-semibold rounded-full hover:bg-yellow-600 transition duration-300"
+        >
+          Get in Touch
+        </a>
       </div>
 
       {/* Animation Section */}
-      <div className="relative flex items-center justify-center w-full md:w-1/2 mt-8 md:mt-0 z-10">
-        <div className="relative w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] bg-white rounded-lg shadow-lg overflow-hidden">
-          <Lottie
-            animationData={DigitalMarketingAnimation}
-            className="h-full w-full object-contain"
-          />
-        </div>
+      <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md mt-4 lg:mt-6 pb-4">
+        <Lottie
+          animationData={DigitalMarketingAnimation}
+          className="w-full h-full"
+        />
       </div>
-    </main>
+    </section>
   );
 }
 

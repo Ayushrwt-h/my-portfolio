@@ -167,7 +167,7 @@ function ContactMe() {
             <a href="https://www.linkedin.com/in/ayush-rawat-a73aa822a/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
               <FaLinkedin className="text-2xl" />
             </a>
-            <a href="https://wa.me/qr/BPJYBJ7KQPIUH1" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+            <a href="https://wa.link/21ddmg" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
               <FaWhatsapp className="text-2xl" />
             </a>
           </div>

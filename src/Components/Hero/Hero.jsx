@@ -12,7 +12,7 @@ function Hero() {
   });
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl from-gray-900 via-purple-800 to-indigo-900 px-6 py-8 text-white overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl from-gray-900 via-purple-800 to-indigo-900 px-6 py-6 text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0 opacity-20">
         <svg
@@ -40,15 +40,15 @@ function Hero() {
 
       {/* Text Section */}
       <div className="relative z-10 flex flex-col items-center text-center space-y-4 max-w-xl mt-4">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-wide">
-          Hi, I'm <span className="text-yellow-300">Abhishek Rawat</span>
+        <h1 className="text-3xl sm:text-5xl lg:text-5xl font-semibold tracking-tight font-sans text-amber-400">
+          Hi,
         </h1>
 
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight">
+        <h2 className="text-lg sm:text-2xl lg:text-3xl font-medium tracking-normal font-serif">
           {typeEffect} <span className="animate-blink">|</span>
         </h2>
 
-        <p className="text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg">
+        <p className="text-sm sm:text-base lg:text-lg leading-relaxed max-w-lg font-light">
           I specialize in digital marketing and crafting user-friendly online
           experiences that help businesses thrive in the digital world.
         </p>

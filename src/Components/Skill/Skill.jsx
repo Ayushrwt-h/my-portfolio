@@ -21,12 +21,12 @@ function Skill() {
     {
       icon: <FaClock />,
       name: "Time Management",
-      percentage: 70,
+      percentage: 80,
     },
     {
       icon: <FaFacebook />,
       name: "Social Media Marketing",
-      percentage: 65,
+      percentage: 75,
     },
     {
       icon: <FaBrain />,
